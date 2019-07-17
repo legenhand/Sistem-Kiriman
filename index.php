@@ -20,8 +20,12 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/jquery-3.4.1.min.js"></script>
+        <link href="css/select2.css" rel="stylesheet" />
+        <script src="js/select2.js"></script>
         <script>
             $(document).ready(function(){
+                $('#provinsi').select2();
+                $('#kota').select2();
                 $('#provinsi').change(function(){
                     var provinsi_id = $(this).val();
 
