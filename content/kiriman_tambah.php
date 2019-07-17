@@ -9,7 +9,7 @@
 <div class="form-group">
         <label for="resi" id="resi">No Resi</label>
         <div class="inputresi">
-            <input type="text" name="resi" id="resi">
+            <input type="text" name="resi" id="resi" data-validation="number">
         </div>
 </div>
 <div id="kiri">    
