@@ -87,7 +87,7 @@
     </div>
     <div class="form-group">
         <label for="telp_pengirim">No. Telp</label>
-        <div class="input"><input type="text" name="telp_pengirim" id="telp_pengirim" data-validation="required"></div>
+        <div class="input"><input type="number" name="telp_pengirim" id="telp_pengirim" data-validation="required"></div>
     </div>
     <div class="form-group">
         <input type="submit" value="Simpan" class="tombol simpan">

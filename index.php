@@ -100,7 +100,6 @@
                     document.getElementById('total').value = result;
                 }
             }</script>
-            <script src="js/jquery.min.js"></script>
             <script src="js/form-validator/jquery.form-validator.min.js"></script>
             <script>
                 $.validate({
