@@ -27,7 +27,7 @@
 <?php
             $sql_provinsi = mysqli_query($con, 'select * from provinces');
 ?>
-            <select name="provinsi" id="provinsi" >
+            <select name="provinsi" id="provinsi" data-validation="required">
                 <option value="">Pilih Provinsi</option>
 <?php
                     $queryprov = mysqli_query($con, "SELECT * FROM provinces");
@@ -44,7 +44,7 @@
     <div class="form-group">
     <label for="kota">Kota</label>
         <div class="input">
-            <select name="kota" id="kota">
+            <select name="kota" id="kota" data-validation="required">
             <?php
                     $querykota = mysqli_query($con, "SELECT * FROM regencies WHERE province_id='$data[id_provinces]'");
                     while($kota = mysqli_fetch_array($querykota)){
@@ -58,17 +58,17 @@
     </div>
     <div class="form-group">
         <label for="berat">Berat</label>
-        <div class="inputkecil"><input type="text" name="berat" id="berat" onkeyup="hitung2();" value="<?= $data['berat'] ?>"></div>
+        <div class="inputkecil"><input type="text" name="berat" id="berat" onkeyup="hitung2();" data-validation="required" value="<?= $data['berat'] ?>" ></div>
         <label for="koli" id="koli">Koli</label>
-        <div class="inputkecil"><input type="text" name="koli" class="koli" id="koli" onkeyup="hitung2();" value="<?= $data['koli'] ?>"></div>
+        <div class="inputkecil"><input type="text" name="koli" class="koli" id="koli" onkeyup="hitung2();" data-validation="required" value="<?= $data['koli'] ?>"></div>
     </div>
     <div class="form-group">
         <label for="ongkir">Ongkos Kirim/kg</label>
-        <div class="input"><input type="text" name="ongkir" id="ongkir" onkeyup="hitung2();" value="<?= $ongkir['ongkir'] ?>" readonly></div>
+        <div class="input"><input type="text" name="ongkir" id="ongkir" onkeyup="hitung2();" data-validation="required" value="<?= $ongkir['ongkir'] ?>" readonly></div>
     </div>
     <div class="form-group">
         <label for="total">Total Ongkir</label>
-        <div class="input"><input type="text" name="total" id="total" value="<?= $data['total'] ?>" readonly></div>
+        <div class="input"><input type="text" name="total" id="total" data-validation="required" value="<?= $data['total'] ?>" readonly></div>
     </div>
 </div>
 <div id="kanan">
@@ -77,30 +77,30 @@
     </div>
     <div class="form-group">
         <label for="nama_penerima">Nama</label>
-        <div class="input"><input type="text" name="nama_penerima" id="nama_penerima" value="<?= $data['nama_penerima'] ?>"></div>
+        <div class="input"><input type="text" name="nama_penerima" id="nama_penerima" data-validation="required" value="<?= $data['nama_penerima'] ?>"></div>
     </div>
     <div class="form-group">
         <label for="alamat_penerima">Alamat</label>
-        <div class="input"><textarea name="alamat_penerima" id="alamat_penerima" rows="3" ><?= $data['alamat_penerima'] ?></textarea></div>
+        <div class="input"><textarea name="alamat_penerima" id="alamat_penerima" rows="3" data-validation="required"><?= $data['alamat_penerima'] ?></textarea></div>
     </div>
     <div class="form-group">
         <label for="telp_penerima">No. Telp</label>
-        <div class="input"><input type="text" name="telp_penerima" id="telp_penerima" value="<?= $data['telp_penerima'] ?>"></div>
+        <div class="input"><input type="text" name="telp_penerima" id="telp_penerima" data-validation="required" value="<?= $data['telp_penerima'] ?>"></div>
     </div>
     <div class="form-group">
         <h4>Pengirim</h4>
     </div>
     <div class="form-group">
         <label for="nama_pengirim">Nama</label>
-        <div class="input"><input type="text" name="nama_pengirim" id="nama_pengirim" value="<?= $data['nama_pengirim']?>"></div>
+        <div class="input"><input type="text" name="nama_pengirim" id="nama_pengirim" data-validation="required" value="<?= $data['nama_pengirim']?>"></div>
     </div>
     <div class="form-group">
         <label for="alamat_pengirim">Alamat</label>
-        <div class="input"><textarea name="alamat_pengirim" id="alamat_pengirim" rows="3" ><?= $data['alamat_pengirim'] ?></textarea></div>
+        <div class="input"><textarea name="alamat_pengirim" id="alamat_pengirim" rows="3" data-validation="required"><?= $data['alamat_pengirim'] ?></textarea></div>
     </div>
     <div class="form-group">
         <label for="telp_pengirim">No. Telp</label>
-        <div class="input"><input type="text" name="telp_pengirim" id="telp_pengirim" value="<?= $data['telp_pengirim'] ?>"></div>
+        <div class="input"><input type="text" name="telp_pengirim" id="telp_pengirim" data-validation="required" value="<?= $data['telp_pengirim'] ?>"></div>
     </div>
     <div class="form-group">
         <input type="submit" value="Simpan" class="tombol simpan">

@@ -65,7 +65,8 @@
                 return false;
                 return true;
             }
-            
+            $.validate({
+            });
         </script>
         
     </head>
@@ -99,6 +100,12 @@
                     document.getElementById('total').value = result;
                 }
             }</script>
+            <script src="js/form-validator/jquery.form-validator.min.js"></script>
+            <script>
+                $.validate({
+                    modules : 'date, security'
+                });
+            </script>
     </body>
 </html>
 <?php

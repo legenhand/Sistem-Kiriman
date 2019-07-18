@@ -11,7 +11,7 @@
 <?php
             $sql_provinsi = mysqli_query($con, 'select * from provinces');
 ?>
-            <select name="provinsi" id="provinsi">
+            <select name="provinsi" id="provinsi" data-validation="required">
                 <option value="">Pilih Provinsi</option>
 <?php 
                 while($row_provinsi = mysqli_fetch_array($sql_provinsi)){
@@ -26,14 +26,14 @@
     <div class="form-group">
     <label for="kota">Kota</label>
         <div class="input">
-            <select name="kota" id="kota">
+            <select name="kota" id="kota" data-validation="required">
                 <option value="">Pilih Provinsi terlebih dahulu</option>
             </select>
         </div>
     </div>
     <div class="form-group">
         <label for="ongkir">Ongkir</label>
-        <div class="input"><input type="text" name="ongkir" id="ongkir"></div>
+        <div class="input"><input type="text" name="ongkir" id="ongkir" data-validation="required"></div>
     </div>        
     <div class="form-group">
         <input type="submit" value="Simpan" class="tombol simpan">
