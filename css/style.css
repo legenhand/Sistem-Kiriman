@@ -57,10 +57,14 @@ input[type=submit]{
 }
 
 /* mengatur desain header */
+
 header{
     background: #038ade;
     color: #fff;
+    width:100%;
     padding: 15px 20px;
+}
+.header .jdl{
     font-size: 20px;
 }
 
