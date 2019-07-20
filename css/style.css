@@ -63,11 +63,27 @@ header{
     color: #fff;
     width:100%;
     padding: 15px 20px;
+    height: 12%;
+    
 }
-.header .jdl{
-    font-size: 20px;
+header .blok{
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    
 }
-
+header .blok #jdl{
+    font-size: 26px;
+    
+}
+header .blok #tgl{
+    font-size: 18px; 
+    text-align: center;
+    margin: 5px 0;
+}
+header .blok #info{
+    font-size: 13px;
+    text-align: right;
+}
 /* mengatur lebar menu 20% dengan background hitam */
 aside{
     flex: 20%;
