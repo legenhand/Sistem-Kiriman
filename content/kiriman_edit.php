@@ -85,7 +85,7 @@
     </div>
     <div class="form-group">
         <label for="telp_penerima">No. Telp</label>
-        <div class="input"><input type="text" name="telp_penerima" id="telp_penerima" data-validation="required" value="<?= $data['telp_penerima'] ?>"></div>
+        <div class="input"><input type="number" name="telp_penerima" id="telp_penerima" data-validation="required" value="<?= $data['telp_penerima'] ?>"></div>
     </div>
     <div class="form-group">
         <h4>Pengirim</h4>
@@ -100,7 +100,7 @@
     </div>
     <div class="form-group">
         <label for="telp_pengirim">No. Telp</label>
-        <div class="input"><input type="text" name="telp_pengirim" id="telp_pengirim" data-validation="required" value="<?= $data['telp_pengirim'] ?>"></div>
+        <div class="input"><input type="number" name="telp_pengirim" id="telp_pengirim" data-validation="required" value="<?= $data['telp_pengirim'] ?>"></div>
     </div>
     <div class="form-group">
         <input type="submit" value="Simpan" class="tombol simpan">

@@ -173,14 +173,18 @@ footer{
     cursor: pointer;
 }
 /* Desain tombol edit dan hapus agar lebih kecil */
-.tombol.edit, .tombol.hapus{
+.tombol.edit, .tombol.hapus, .tombol.print{
     padding: 10px 15px;
     font-size: 12px;
 }
+
 .tombol.hapus{
     background: #fc4c4c;
 }
 
+.tombol.print{
+    background: #32be0e;
+}
 /* Mengatur form-group agar tidak terpengaruh float */
 .form-group{
     clear: both;

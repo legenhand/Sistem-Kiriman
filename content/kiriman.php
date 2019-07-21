@@ -30,7 +30,7 @@
         <td><?= $data['nama_penerima'] ?></td>
         <td><?= $data['name'] ?></td>
         <td>
-        
+            <a href="content/print_resi.php?id=<?= $data['no_resi']?>" class="tombol print" target="_BLANK">Cetak</a>
             <a href="?hal=kiriman_edit&id=<?= $data['no_resi']?>" class="tombol edit">Edit</a>
             <a href="?hal=kiriman_hapus&id=<?= $data['no_resi'] ?>" class="tombol hapus">hapus</a>
         </td>

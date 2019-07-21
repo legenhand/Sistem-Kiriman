@@ -2,7 +2,6 @@
     if(!defined('INDEX')) die("");
     
     
-    
             $query = mysqli_query($con, "INSERT INTO datakiriman SET no_resi = $_POST[resi],
                                     id_provinces = $_POST[provinsi],
                                     id_regencies = $_POST[kota],
