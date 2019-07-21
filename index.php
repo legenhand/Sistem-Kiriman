@@ -67,12 +67,23 @@
             }
             $.validate({
             });
+            function tampilkanwaktu(){         //fungsi ini akan dipanggil di bodyOnLoad dieksekusi tiap 1000ms = 1detik    
+                var waktu = new Date();            //membuat object date berdasarkan waktu saat 
+                var sh = waktu.getHours() + "";    //memunculkan nilai jam, //tambahan script + "" supaya variable sh bertipe string sehingga bisa dihitung panjangnya : sh.length    //ambil nilai menit
+                var sm = waktu.getMinutes() + "";  //memunculkan nilai detik    
+                var ss = waktu.getSeconds() + "";  //memunculkan jam:menit:detik dengan menambahkan angka 0 jika angkanya cuma satu digit (0-9)
+                document.getElementById("tgl").innerHTML = "<?= date('l, d-m-Y  '); ?>" + (sh.length==1?"0"+sh:sh) + ":" + (sm.length==1?"0"+sm:sm) + ":" + (ss.length==1?"0"+ss:ss);
+            }
         </script>
         
     </head>
-    <body>
+    <body onload="tampilkanwaktu();setInterval('tampilkanwaktu()', 1000);">
         <header>
-            Aplikasi Manajemen kiriman
+            <div class="blok">
+                <div id="jdl">Aplikasi Manajemen kiriman</div> 
+                <div id="tgl"></div>
+                <div id="info">Halo <?= $_SESSION['nama_lengkap'] ?>, Anda Login Sebagai Administrator<br><a href="logout.php">Logout</a></div>
+            </div>
         </header>
         <div class="container">
             <aside>
@@ -91,15 +102,7 @@
             Copyright &copy; Firmansyah
         </footer>
         <script>
-        function total() {
-                var berat = document.getElementById('berat').value;
-                var koli = document.getElementById('koli').value;
-                var ongkir = document.getElementBydId('ongkir').value;
-                var result = parseInt(koli) * (parseInt(berat) * parseInt('ongkir'));
-                if (!isNaN(result)) {
-                    document.getElementById('total').value = result;
-                }
-            }</script>
+        </script>
             <script src="js/form-validator/jquery.form-validator.min.js"></script>
             <script>
                 $.validate({

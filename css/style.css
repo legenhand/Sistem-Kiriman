@@ -57,13 +57,33 @@ input[type=submit]{
 }
 
 /* mengatur desain header */
+
 header{
     background: #038ade;
     color: #fff;
+    width:100%;
     padding: 15px 20px;
-    font-size: 20px;
+    height: 12%;
+    
 }
-
+header .blok{
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    
+}
+header .blok #jdl{
+    font-size: 26px;
+    
+}
+header .blok #tgl{
+    font-size: 18px; 
+    text-align: center;
+    margin: 5px 0;
+}
+header .blok #info{
+    font-size: 13px;
+    text-align: right;
+}
 /* mengatur lebar menu 20% dengan background hitam */
 aside{
     flex: 20%;
@@ -153,14 +173,18 @@ footer{
     cursor: pointer;
 }
 /* Desain tombol edit dan hapus agar lebih kecil */
-.tombol.edit, .tombol.hapus{
+.tombol.edit, .tombol.hapus, .tombol.print{
     padding: 10px 15px;
     font-size: 12px;
 }
+
 .tombol.hapus{
     background: #fc4c4c;
 }
 
+.tombol.print{
+    background: #32be0e;
+}
 /* Mengatur form-group agar tidak terpengaruh float */
 .form-group{
     clear: both;

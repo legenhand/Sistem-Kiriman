@@ -72,7 +72,7 @@
     </div>
     <div class="form-group">
         <label for="telp_penerima">No. Telp</label>
-        <div class="input"><input type="text" name="telp_penerima" id="telp_penerima" data-validation="required"></div>
+        <div class="input"><input type="number" name="telp_penerima" id="telp_penerima" data-validation="required"></div>
     </div>
     <div class="form-group">
         <h4>Pengirim</h4>

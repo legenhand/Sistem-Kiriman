@@ -33,7 +33,7 @@
     </div>
     <div class="form-group">
         <label for="ongkir">Ongkir</label>
-        <div class="input"><input type="text" name="ongkir" id="ongkir" data-validation="required"></div>
+        <div class="input"><input type="number" name="ongkir" id="ongkir" data-validation="required"></div>
     </div>        
     <div class="form-group">
         <input type="submit" value="Simpan" class="tombol simpan">
