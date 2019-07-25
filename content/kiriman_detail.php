@@ -10,12 +10,17 @@
 </head>
 <h2 class="judul">Detail Kiriman</h2>
 <form>
-<div class="form-group">
+    
+    <div class="form-group">
         <label for="resi" id="resi">No Resi</label>
         <div class="inputresi">
             <input type="text" name="resi" id="resi" value="<?= $data['no_resi'] ?>" disabled>
         </div>
-</div>
+    </div>
+    <div class="form-group">
+        <label for="resi" id="resi">Tgl input : </label>
+        <label for="resi" id="resi"><?= $data['tgl'] ?></label>    
+    </div>
 <div id="kiri">    
     
     <div class="form-group">

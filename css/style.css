@@ -190,8 +190,8 @@ footer{
     clear: both;
 }
 
-/* Mengatur lebal label 30% dengan teks bold */
-.form-group label{
+/* Mengatur lebal label 20% dengan teks bold */
+.form-group label,.form-group .tgl{
     display: block;
     padding: 15px 0;
     float: left;
