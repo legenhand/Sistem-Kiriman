@@ -82,7 +82,7 @@
             <div class="blok">
                 <div id="jdl">Aplikasi Manajemen kiriman</div> 
                 <div id="tgl"></div>
-                <div id="info">Halo <?= $_SESSION['nama_lengkap'] ?>, Anda Login Sebagai Administrator<br><a href="logout.php">Logout</a></div>
+                <div id="info">Halo <?= $_SESSION['nama_lengkap'] ?>, Anda Login Sebagai <?= $_SESSION['kantor']?><br><a href="logout.php">Logout</a></div>
             </div>
         </header>
         <div class="container">
@@ -91,6 +91,7 @@
                     <li><a href="?hal=dashboard" class="aktif">Dashboard</a></li>
                     <li><a href="?hal=kiriman">Data kiriman</a></li>
                     <li><a href="?hal=ongkir">Data Ongkos kirim</a></li>
+                    <li><a href="?hal=lacak">Cek kiriman</a></li>
                     <li><a href="logout.php">Keluar</a></li>
                 </ul>
             </aside>

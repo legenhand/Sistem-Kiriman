@@ -1,6 +1,7 @@
 <?php
     if(!defined('INDEX')) die("");
-    
+
+            $insert = date('d-m-Y H-i-s') . "| Input Di " . $_SESSION['kantor'];
     
             $query = mysqli_query($con, "INSERT INTO datakiriman SET no_resi = $_POST[resi],
                                     id_provinces = $_POST[provinsi],
@@ -15,7 +16,11 @@
                                     alamat_pengirim = '$_POST[alamat_pengirim]',
                                     telp_pengirim = $_POST[telp_pengirim]   
                                     ");
-    if($query){
+            $querystatus = mysqli_query($con, "INSERT INTO status SET no_resi = $_POST[resi],
+                                    kode_status = '1',
+                                    status = '$insert'
+                                    ");
+    if($query && $querystatus){
         echo "Data Berhasil disimpan!";
         echo "<meta http-equiv='refresh' content='1; url=?hal=kiriman'>";
     }else{
