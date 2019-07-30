@@ -1,5 +1,19 @@
-
-
+<?php
+    include ("../library/config.php");
+    $no_resi = $_POST['resi'];
+    $query = mysqli_query($con, "SELECT * FROM status WHERE no_resi = $no_resi");
+    $stats = mysqli_fetch_array($query);
+    $no  = 0;
+    $pecahstr = explode("|",$stats['status']);
+    $i = 0; 
+    $a = 0;
+    switch($stats['kode_status']){
+        case 1:
+        $ststerbaru = "Diinput Di Kota Pengirim";
+        break;
+    }
+?>
+<h4>Status Terbaru : <?= $ststerbaru ?></h4>
 <table class="table">
     <thead>
         <tr>
@@ -9,21 +23,16 @@
         </tr>
     </thead>
     <tbody>
-    <?php
-    include ("../library/config.php");
-    $no_resi = $_GET['resi'];
-    $query = mysqli_query($con, "SELECT * FROM status WHERE no_resi = $no_resi");
-    $stats = mysqli_fetch_array($query);
-    $no  = 0;
-    $pecahstr = explode("|",$stats['status']);
-    for ( $i = 0; $i < count($pecahstr); $i++ ) {
-        if($i % 2 == 0){
-            echo "<tr><td>$i</td>";
-        }
-?>
-            <td><?= $pecahstr[$i] ?></td>
 <?php
-        
+    while( $i < count($pecahstr)) { 
+        echo "<tr>";
+        $a = $a + 1;
+        echo "<td>$a</td>";
+        for ($b=1;$b<=2;$b++){
+            echo "<td>$pecahstr[$i]</td>";
+            $i++;        
+        }
+        echo "<tr>";    
 ?>
     </tbody>
 <?php 

@@ -51,6 +51,24 @@
                         }
                     });
                 })
+                var $form = $('#form-lacak');
+                    $form.submit(function(){
+                        var no_resi = $('#resi').val();
+
+                        $.ajax({
+                            type: 'POST',
+                            url: 'content/lacakajax.php',
+                            data: 'resi='+no_resi,
+                            success: function(response){
+                                $('#result').html(response);
+                            }
+                        });
+                        $.post($(this).attr('action'), $(this).serialize(), function(response){
+                        
+                        
+                        },'json');
+                        return false;
+                 });
             });
             function hitung2() {
                 var ongkir = $("#ongkir").val();
@@ -65,8 +83,7 @@
                 return false;
                 return true;
             }
-            $.validate({
-            });
+            
             function tampilkanwaktu(){         //fungsi ini akan dipanggil di bodyOnLoad dieksekusi tiap 1000ms = 1detik    
                 var waktu = new Date();            //membuat object date berdasarkan waktu saat 
                 var sh = waktu.getHours() + "";    //memunculkan nilai jam, //tambahan script + "" supaya variable sh bertipe string sehingga bisa dihitung panjangnya : sh.length    //ambil nilai menit
