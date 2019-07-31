@@ -16,7 +16,7 @@
             $_SESSION['username'] = $data['username'];
             $_SESSION['password'] = $data['password'];
             $_SESSION['nama_lengkap'] = $data['nama_lengkap'];
-
+            $_SESSION['kantor'] = $data['kantor'];
             header("location:index.php");
         }else{
             echo "<p align='center'>Login gagal </p>";

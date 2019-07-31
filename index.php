@@ -51,6 +51,24 @@
                         }
                     });
                 })
+                var $form = $('#form-lacak');
+                    $form.submit(function(){
+                        var no_resi = $('#resi').val();
+
+                        $.ajax({
+                            type: 'POST',
+                            url: 'content/lacakajax.php',
+                            data: 'resi='+no_resi,
+                            success: function(response){
+                                $('#result').html(response);
+                            }
+                        });
+                        $.post($(this).attr('action'), $(this).serialize(), function(response){
+                        
+                        
+                        },'json');
+                        return false;
+                 });
             });
             function hitung2() {
                 var ongkir = $("#ongkir").val();
@@ -65,8 +83,7 @@
                 return false;
                 return true;
             }
-            $.validate({
-            });
+            
             function tampilkanwaktu(){         //fungsi ini akan dipanggil di bodyOnLoad dieksekusi tiap 1000ms = 1detik    
                 var waktu = new Date();            //membuat object date berdasarkan waktu saat 
                 var sh = waktu.getHours() + "";    //memunculkan nilai jam, //tambahan script + "" supaya variable sh bertipe string sehingga bisa dihitung panjangnya : sh.length    //ambil nilai menit
@@ -82,7 +99,7 @@
             <div class="blok">
                 <div id="jdl">Aplikasi Manajemen kiriman</div> 
                 <div id="tgl"></div>
-                <div id="info">Halo <?= $_SESSION['nama_lengkap'] ?>, Anda Login Sebagai Administrator<br><a href="logout.php">Logout</a></div>
+                <div id="info">Halo <?= $_SESSION['nama_lengkap'] ?>, Anda Login Sebagai <?= $_SESSION['kantor']?><br><a href="logout.php">Logout</a></div>
             </div>
         </header>
         <div class="container">
@@ -91,6 +108,7 @@
                     <li><a href="?hal=dashboard" class="aktif">Dashboard</a></li>
                     <li><a href="?hal=kiriman">Data kiriman</a></li>
                     <li><a href="?hal=ongkir">Data Ongkos kirim</a></li>
+                    <li><a href="?hal=lacak">Cek kiriman</a></li>
                     <li><a href="logout.php">Keluar</a></li>
                 </ul>
             </aside>
