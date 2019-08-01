@@ -10,16 +10,22 @@
     switch($stats['kode_status']){
         case 1:
         $ststerbaru = "Diinput Di Kota Pengirim";
+        break;
         case 2:
         $ststerbaru = "Dikirim Ke kantor tujuan";
+        break;
         case 3:
         $ststerbaru = "Dikirim Ke alamat Penerima";
+        break;
         case 4:
         $ststerbaru = "Paket telah diterima";
+        break;
         case 5:
         $ststerbaru = "retur ke kota pengirim";
+        break;
         case 6:
         $ststerbaru = "retur diterima oleh pengirim";
+        break;
         case 0:
         $ststerbaru = "Kiriman Dibatalkan";
         break;
