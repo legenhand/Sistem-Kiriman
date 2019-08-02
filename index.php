@@ -51,8 +51,8 @@
                         }
                     });
                 })
-                var $form = $('#form-lacak');
-                    $form.submit(function(){
+                var $formlacak = $('#form-lacak');
+                    $formlacak.submit(function(){
                         var no_resi = $('#resi').val();
 
                         $.ajax({
@@ -64,11 +64,26 @@
                             }
                         });
                         $.post($(this).attr('action'), $(this).serialize(), function(response){
-                        
-                        
                         },'json');
                         return false;
-                 });
+                    });
+                    var $formongkirtambah = $('#ongkir-tambah');
+                    $formongkirtambah.submit(function(){
+                        var ongkir = $('#ongkir').val();
+                        var provinsi  = $('#provinsi option:selected').val();
+                        var kota  = $('#kota option:selected').val();
+                        $.ajax({
+                            type: 'POST',
+                            url: 'content/ongkir_insert.php',
+                            data: 'ongkir='+ongkir+'&kota='+kota+'&provinsi='+provinsi,
+                            success: function(response){
+                                $('#result').val(response);
+                            }
+                        });
+                        $.post($(this).attr('action'), $(this).serialize(), function(response){
+                        },'json');
+                        return false;
+                    });
             });
             function hitung2() {
                 var ongkir = $("#ongkir").val();
