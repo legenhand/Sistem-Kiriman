@@ -55,7 +55,16 @@ input[type=submit]{
     text-decoration: none;
     cursor: pointer;
 }
+form a.submit{
+    display: inline-block;
+    max-width: 150px;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    background: #038ade;
+    cursor: pointer;
 
+}
 /* mengatur desain header */
 
 header{
@@ -167,10 +176,12 @@ footer{
     display: inline-block;
     max-width: 150px;
     padding: 15px 30px;
+    
     color: #fff;
     text-decoration: none;
     background: #038ade;
     cursor: pointer;
+    text-align:center;
 }
 /* Desain tombol edit dan hapus agar lebih kecil */
 .tombol.edit, .tombol.hapus, .tombol.print{
@@ -237,6 +248,7 @@ input[type=radio]{
 }
 .tombol.simpan{
     background: #038ade;
+    width:150px;
 }
 .tombol.reset{
     background: #fb8307;

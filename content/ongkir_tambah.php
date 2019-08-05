@@ -3,7 +3,7 @@
 ?>
 
 <h2 class="judul">Atur Ongkos Kirim</h2>
-<form action="?hal=ongkir_insert" method="post">
+<form method="post" id="ongkir-tambah">
 
     <div class="form-group">
         <label for="provinsi">Provinsi</label>
@@ -36,7 +36,9 @@
         <div class="input"><input type="number" name="ongkir" id="ongkir" data-validation="required"></div>
     </div>        
     <div class="form-group">
-        <input type="submit" value="Simpan" class="tombol simpan">
+        <a class="tombol simpan" id="tambah-ongkir">Simpan</a>
         <input type="reset" value="Batal" class="tombol reset">
-    </div>       
+    </div>    
+    <div id="result">
+    </div>   
 </form>

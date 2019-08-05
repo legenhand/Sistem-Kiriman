@@ -51,8 +51,8 @@
                         }
                     });
                 })
-                var $form = $('#form-lacak');
-                    $form.submit(function(){
+                var $formlacak = $('#form-lacak');
+                    $formlacak.submit(function(){
                         var no_resi = $('#resi').val();
 
                         $.ajax({
@@ -64,11 +64,33 @@
                             }
                         });
                         $.post($(this).attr('action'), $(this).serialize(), function(response){
-                        
-                        
                         },'json');
                         return false;
-                 });
+                    });
+                    
+                    $('#tambah-ongkir').click(function(){
+                        var data = $('#ongkir-tambah').serialize();
+                        $.ajax({
+                            type: 'POST',
+                            url: 'content/ongkir_insert.php',
+                            data: data,
+                            success: function(response){
+                                $('#result').html(response);
+                            }
+                        });
+                    });
+
+                    $('#tambah-kiriman').click(function(){
+                        var data = $('#kiriman-tambah').serialize();
+                        $.ajax({
+                            type: 'POST',
+                            url: 'content/kiriman_insert.php',
+                            data: data,
+                            success: function(response){
+                                $('#result').html(response);
+                            }
+                        });
+                    });
             });
             function hitung2() {
                 var ongkir = $("#ongkir").val();

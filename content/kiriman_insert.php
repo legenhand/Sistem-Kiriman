@@ -1,5 +1,6 @@
 <?php
-    if(!defined('INDEX')) die("");
+    include "../library/config.php";
+    session_start();
 
             $insert = date('d-m-Y H-i-s') . "| Input Di " . $_SESSION['kantor'];
     
@@ -22,7 +23,6 @@
                                     ");
     if($query && $querystatus){
         echo "Data Berhasil disimpan!";
-        echo "<meta http-equiv='refresh' content='1; url=?hal=kiriman'>";
     }else{
         echo "tidak dapat menyimpan data! <br>";
         echo mysqli_error($con);
