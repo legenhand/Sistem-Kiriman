@@ -36,7 +36,7 @@
         <div class="input"><input type="number" name="ongkir" id="ongkir" data-validation="required"></div>
     </div>        
     <div class="form-group">
-        <input type="submit" value="Simpan" class="tombol simpan">
+        <a class="tombol simpan" id="tambah-ongkir">Simpan</a>
         <input type="reset" value="Batal" class="tombol reset">
     </div>    
     <div id="result">

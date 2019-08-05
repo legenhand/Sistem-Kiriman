@@ -67,22 +67,17 @@
                         },'json');
                         return false;
                     });
-                    var $formongkirtambah = $('#ongkir-tambah');
-                    $formongkirtambah.submit(function(){
-                        var ongkir = $('#ongkir').val();
-                        var provinsi  = $('#provinsi option:selected').val();
-                        var kota  = $('#kota option:selected').val();
+                    
+                    $('#tambah-ongkir').click(function(){
+                        var data = $('#ongkir-tambah').serialize();
                         $.ajax({
                             type: 'POST',
                             url: 'content/ongkir_insert.php',
-                            data: 'ongkir='+ongkir+'&kota='+kota+'&provinsi='+provinsi,
+                            data: data,
                             success: function(response){
-                                $('#result').val(response);
+                                $('#result').html(response);
                             }
                         });
-                        $.post($(this).attr('action'), $(this).serialize(), function(response){
-                        },'json');
-                        return false;
                     });
             });
             function hitung2() {

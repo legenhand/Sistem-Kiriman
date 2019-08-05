@@ -8,7 +8,7 @@
     if($query){
         echo "Data berhasil disimpan!";
     }else{
-        echo "Tidak dapat menyimpan data!";
-        echo mysqli_error();
+        echo "Tidak dapat menyimpan data!<br>";
+        echo mysqli_error($con);
     }
 ?>
