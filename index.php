@@ -79,6 +79,18 @@
                             }
                         });
                     });
+
+                    $('#tambah-kiriman').click(function(){
+                        var data = $('#kiriman-tambah').serialize();
+                        $.ajax({
+                            type: 'POST',
+                            url: 'content/kiriman_insert.php',
+                            data: data,
+                            success: function(response){
+                                $('#result').html(response);
+                            }
+                        });
+                    });
             });
             function hitung2() {
                 var ongkir = $("#ongkir").val();

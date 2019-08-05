@@ -5,7 +5,7 @@
 
 </head>
 <h2 class="judul">Kiriman</h2>
-<form action="?hal=kiriman_insert" method="post" enctype="multipart/form-data">
+<form method="post" id="kiriman-tambah">
 <div class="form-group">
         <label for="resi" id="resi">No Resi</label>
         <div class="inputresi">
@@ -90,8 +90,9 @@
         <div class="input"><input type="number" name="telp_pengirim" id="telp_pengirim" data-validation="required"></div>
     </div>
     <div class="form-group">
-        <input type="submit" value="Simpan" class="tombol simpan">
+        <a class="tombol simpan" id="tambah-kiriman">Simpan</a>
         <input type="reset" value="Batal" class="tombol reset">
     </div>
+    <div id="result"></div>
 </div>
 </form>
