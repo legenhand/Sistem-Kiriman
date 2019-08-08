@@ -17,15 +17,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+        <script src="js/jquery-3.4.1.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-        
         <link href="css/select2.css" rel="stylesheet">
         <script src="js/select2.js" type="text/javascript"></script>
-        <link rel="stylesheet" href="plugin/DataTables/css/dataTables.bootstrap4.min.css">
-        <script src="plugin/DataTables/js/jquery.dataTables.min.js" type="text/javascript"></script>
-        <script src="plugin/DataTables/js/dataTables.bootstrap4.min.js" type="text/javascript"></script>
-        <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="plugin/datatables.min.css"/>
+        <script type="text/javascript" src="plugin/datatables.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
                 $('#provinsi').select2();
@@ -122,7 +120,7 @@
         
         <!-- <link rel="stylesheet" href="css/style.css">  -->
     </head>
-    <body class="h-100" onload="tampilkanwaktu();setInterval('tampilkanwaktu()', 1000);"> 
+    <body class="h-100"> 
         <nav class="navbar navbar-expand-sm navbar-dark sticky-top bg-info">
             <a href="#" class="navbar-brand">Manajemen Kiriman</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
@@ -200,7 +198,7 @@
         <div class="bg-light fixed-bottom">
             <p class="m-2 text-center text-muted">Copyright &copy; Firmansyah</p>
         </div>
-        <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+ 
         <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
             <script src="js/form-validator/jquery.form-validator.min.js" type="text/javascript"></script>
             <script>
