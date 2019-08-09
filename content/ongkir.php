@@ -30,7 +30,7 @@
                 <td><?= $data['ongkir'] ?></td>    
                 <td>
                     <a class="btn btn-sm btn-info" href="?hal=ongkir_edit&id=<?=$data['id_regencies']?>"><i class="oi oi-pencil"></i> Edit </a>
-                    <a class="btn btn-sm btn-danger" href="?hal=ongkir_hapus&id=<?=$data['id_regencies']?>"> Hapus </a>
+                    <a class="btn btn-sm btn-danger" href="?hal=ongkir_hapus&id=<?=$data['id_regencies']?>"><i class="oi oi-delete"></i> Hapus </a>
 
                 </td>
             </tr>

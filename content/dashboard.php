@@ -27,7 +27,7 @@
                 <span class="display-3 float-right"><?= $jml_ongkir?></span>
             </li>
             <li class="list-group-item bg-success">
-                <a href="?hal=kiriman" class="nav-link text-white">Data Ongkos Kirim </a>
+                <a href="?hal=ongkir" class="nav-link text-white">Data Ongkos Kirim </a>
             </li>
         </ul>
     </div>

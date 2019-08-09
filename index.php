@@ -136,22 +136,22 @@
                     </li>
                     <li class="nav-item">
                         <a href="?hal=kiriman" class="nav-link text-white">
-                            <i class="oi oi-dashboard"></i> Data Kiriman
+                            <i class="oi oi-list-rich"></i> Data Kiriman
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="?hal=ongkir" class="nav-link text-white">
-                            <i class="oi oi-dashboard"></i> Data Ongkos Kirim
+                            <i class="oi oi-dollar"></i> Data Ongkos Kirim
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="?hal=lacak" class="nav-link text-white">
-                            <i class="oi oi-dashboard"></i> Lacak Kiriman
+                            <i class="oi oi-magnifying-glass"></i> Lacak Kiriman
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="logout.php" class="nav-link text-white">
-                            <i class="oi oi-dashboard"></i> Keluar
+                            <i class="oi oi-account-logout"></i> Keluar
                         </a>
                     </li>
                 </ul>
