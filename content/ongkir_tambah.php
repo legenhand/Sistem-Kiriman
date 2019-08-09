@@ -37,8 +37,8 @@
         <div class="col-sm-4"><input class="form-control" type="number" name="ongkir" id="ongkir" data-validation="required"></div>
     </div>        
     <div class="form-group row">
-        <a class="btn btn-lg btn-success" id="tambah-ongkir">Simpan</a>
-        <input type="reset" value="Batal" class="btn btn-lg btn-danger">
+        <a class="btn btn-lg btn-success text-white m-2" id="tambah-ongkir">Simpan</a>
+        <input type="reset" value="Batal" class="btn btn-lg btn-danger m-2 ">
     </div>    
     <div id="result">
     </div>   

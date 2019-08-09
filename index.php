@@ -84,6 +84,7 @@
                     });
 
                     $('#tambah-kiriman').click(function(){
+                        
                         var data = $('#kiriman-tambah').serialize();
                         $.ajax({
                             type: 'POST',

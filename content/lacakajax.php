@@ -37,8 +37,11 @@
         case 6:
         $ststerbaru = "retur diterima oleh pengirim";
         break;
-        case 0:
+        case 9:
         $ststerbaru = "Kiriman Dibatalkan";
+        break;
+        default:
+        $ststerbaru = "Kiriman Tidak Ditemukan !";
         break;
     }
 ?>
