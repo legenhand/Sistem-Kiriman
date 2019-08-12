@@ -98,7 +98,7 @@
             });
             function hitung2() {
                 var ongkir = $("#ongkir").val();
-                var koli = $(".koli").val();
+                var koli = $("#koli").val();
                 var berat = $("#berat").val();
                 total = ongkir * koli * berat;
                 $("#total").val(total);

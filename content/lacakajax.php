@@ -58,7 +58,7 @@
 <?php
     while( $i < count($pecahstr)) { 
         echo "<tr>";
-        $a = $a + 1;
+        $a++;
         echo "<td>$a</td>";
         for ($b=1;$b<=2;$b++){
             echo "<td>$pecahstr[$i]</td>";

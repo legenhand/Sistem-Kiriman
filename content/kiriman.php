@@ -37,9 +37,9 @@
                 <a href="?hal=kiriman_hapus&id=<?= $data['no_resi'] ?>" class="btn btn-sm btn-danger"><i class="oi oi-delete"></i> hapus</a>
             </td>
         </tr>
-        </tbody>
     <?php
         }
-    ?>
+        ?>
+        </tbody>
     </table>
 </div>
