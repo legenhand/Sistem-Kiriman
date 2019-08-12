@@ -19,6 +19,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
         <script src="js/jquery-3.4.1.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/brand-icons.css">
         <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
         <link href="css/select2.css" rel="stylesheet">
         <script src="js/select2.js" type="text/javascript"></script>
@@ -197,14 +198,15 @@
             </div>
         </div>
         <div class="bg-light fixed-bottom">
-            <p class="m-2 text-center text-muted">Copyright &copy; Firmansyah</p>
+            <p class="m-2  text-center text-muted">
+                <a href="https://github.com/legenhand"><i class="bd-github"></i></a>
+            </p>
         </div>
  
         <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
             <script src="js/form-validator/jquery.form-validator.min.js" type="text/javascript"></script>
             <script>
                 $.validate({
-                    modules : 'date, security'
                 });
             </script>
     </body>
