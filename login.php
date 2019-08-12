@@ -4,11 +4,11 @@
         <title>Login Aplikasi</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/jquery-3.4.1.min.js"></script> 
     </head>
     <body class="h-100 bg-info d-flex align-items-center">
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-4 mx-auto bg-light p-4">
