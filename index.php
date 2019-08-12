@@ -122,10 +122,11 @@
         
         <!-- <link rel="stylesheet" href="css/style.css">  -->
     </head>
-    <body class="h-100"> 
-        <nav class="navbar navbar-expand-sm navbar-dark sticky-top bg-info">
-            <a href="#" class="navbar-brand">Manajemen Kiriman</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+    <body class="h-100 bg-light"> 
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top bg-info row">
+            <a href="#" class="navbar-brand col">Manajemen Kiriman</a>
+            <div class="col-sm-10 text-right hidden col-4 text-light">Anda Login Sebagai <?= $_SESSION['kantor']?></div>
+            <button class="navbar-toggler col-2 col-sm-1" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             

@@ -6,7 +6,7 @@
 <div class="jumbotron mt-3">
     <H1>Selamat Datang <?= $_SESSION['nama_lengkap'] ?> di </h1> 
     <h1 class="display-4"> Aplikasi Manajemen kiriman</H1>
-    <h3>Anda login sebagai Administrator<H3>
+    <h3>Anda login sebagai <?= $_SESSION['kantor']?><H3>
 </div>
 <div class="row mb-3 pb-3">
     <div class="col-sm-6 mb-3">
