@@ -5,8 +5,7 @@
     include "library/config.php";
 
     if(empty($_SESSION['username']) or empty($_SESSION['password'])){
-        echo "<p align='center'> Anda harus login terlebih dahulu!</p>";
-        echo "<meta http-equiv='refresh' content='2; url=login.php'>";
+        echo "<meta http-equiv='refresh' content='0; url=login.php'>";
     }else{
         define('INDEX', true);
     
