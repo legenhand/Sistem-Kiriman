@@ -58,9 +58,10 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/) - framework untuk html dan css
+* [Jquery](https://jquery.com/) - javascript library untuk menyederhanakan program
+* [Select2](https://select2.org/) - mengubah select boxes menjadi lebih baik
+
 
 ## Contributing
 
