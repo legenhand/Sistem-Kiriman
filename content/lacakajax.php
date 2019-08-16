@@ -64,10 +64,8 @@
             echo "<td>$pecahstr[$i]</td>";
             $i++;        
         }
-        echo "<tr>";    
-?>
-    </tbody>
-<?php 
+        echo "</tr>";    
     }
-?>
+    ?>
+</tbody>
 </table>
