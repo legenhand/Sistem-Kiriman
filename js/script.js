@@ -61,7 +61,7 @@ $(document).ready(function(){
             var data = $('#kiriman-tambah').serialize();
             $.ajax({
                 type: 'POST',
-                url: 'content/kiriman_insert.php',
+                url: 'content/kiriman/insert.php',
                 data: data,
                 success: function(response){
                     $('#result').html(response);

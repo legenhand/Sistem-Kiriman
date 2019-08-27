@@ -76,7 +76,7 @@
                             </a>
                         </li>
                         <li class="list-group-item bg-dark">
-                            <a class="nav-link text-white" href="?hal=kiriman">
+                            <a class="nav-link text-white" href="?hal=kiriman/kiriman">
                                 <i class="oi oi-list-rich"></i> Data Kiriman
                             </a>
                         </li>

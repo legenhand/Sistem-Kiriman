@@ -17,7 +17,7 @@
                                     ");
     if($query){
         echo "Data Berhasil disimpan!";
-        echo "<meta http-equiv='refresh' content='1; url=?hal=kiriman'>";
+        echo "<meta http-equiv='refresh' content='1; url=?hal=kiriman/kiriman'>";
     }else{
         echo "tidak dapat menyimpan data! <br>";
         echo mysqli_error($con);

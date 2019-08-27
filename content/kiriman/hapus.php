@@ -5,7 +5,7 @@
 
     if($query){
         echo "Data berhasil dihapus!";
-        echo "<meta http-equiv='refresh' content='1; url=?hal=kiriman'>";
+        echo "<meta http-equiv='refresh' content='1; url=?hal=kiriman\kiriman'>";
     }else{
         echo "tidak dapat menghapus data!";
         echo mysqli_error;

@@ -16,7 +16,7 @@
                 <span class="display-3 float-right"><?= $jml_kiriman?></span>
             </li>
             <li class="list-group-item bg-danger">
-                <a href="?hal=kiriman" class="nav-link text-white">Data Kiriman </a>
+                <a href="?hal=kiriman/kiriman" class="nav-link text-white">Data Kiriman </a>
             </li>
         </ul>
     </div>

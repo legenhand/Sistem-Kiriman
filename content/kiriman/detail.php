@@ -102,7 +102,7 @@
             <div class="col-sm-6"><input class="form-control" type="number" name="telp_pengirim" id="telp_pengirim" value="<?= $data['telp_pengirim']?>" data-validation="required" readonly></div>
         </div>
         <div class="form-group row">
-            <a class="btn btn-lg btn-secondary text-white" href="?hal=kiriman">Kembali</a>
+            <a class="btn btn-lg btn-secondary text-white" href="?hal=kiriman/kiriman">Kembali</a>
         </div>
         <div id="result"></div>
     </div>
