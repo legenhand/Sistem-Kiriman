@@ -68,6 +68,18 @@ $(document).ready(function(){
                 }
             });
         });   
+        $('#edit-kiriman').click(function(){
+            
+            var data = $('#kiriman-edit').serialize();
+            $.ajax({
+                type: 'POST',
+                url: 'content/kiriman/update.php',
+                data: data,
+                success: function(response){
+                    $('#result').html(response);
+                }
+            });
+        });   
 });
 function hitung2() {
     var ongkir = $("#ongkir").val();
