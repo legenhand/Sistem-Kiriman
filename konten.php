@@ -1,9 +1,9 @@
 <?php
     if(!defined('INDEX')) die("");
 
-    $halaman = array("dashboard","kiriman","kiriman_tambah", "kiriman_insert", "kiriman_edit",
-    "kiriman_update", "kiriman_hapus", "ongkir", "ongkir_tambah", "ongkir_insert",
-    "ongkir_edit", "ongkir_update", "ongkir_hapus", "kiriman_detail", "print_resi", "lacak");
+    $halaman = array("dashboard","kiriman/kiriman","kiriman/tambah", "kiriman/insert", "kiriman/edit",
+    "kiriman/update", "kiriman/hapus", "kiriman/detail" , "ongkir", "ongkir_tambah", "ongkir_insert",
+    "ongkir_edit", "ongkir_update", "ongkir_hapus", "print_resi", "lacak");
 
     if(isset($_GET['hal'])) $hal = $_GET['hal'];
     else $hal = "dashboard";

@@ -39,4 +39,6 @@
     ?>    
         </tbody>
     </table>
+<hr>
+<br>
 </div>

@@ -8,7 +8,7 @@
 <head>
 
 </head>
-<h4 class="mt-2">Kiriman</h4>
+<h4 class="mt-2">Detail Kiriman</h4>
 <hr>
 <form class="mb-5" method="post" id="kiriman-tambah">
 <div class="form-group row">
@@ -27,7 +27,7 @@
 <?php
             $sql_provinsi = mysqli_query($con, 'select * from provinces');
 ?>
-            <select class="form-control" name="provinsi" id="provinsi" data-validation="required">
+            <select class="form-control" name="provinsi" id="provinsi" data-validation="required" disabled>
                 <option value="">Pilih Provinsi</option>
 <?php
                     $queryprov = mysqli_query($con, "SELECT * FROM provinces");
@@ -44,7 +44,7 @@
     <div class="form-group row">
         <label class="col-sm-3 col-form-label" for="kota">Kota</label>
             <div class="col-sm-6">
-            <select class="form-control" name="kota" id="kota" data-validation="required">
+            <select class="form-control" name="kota" id="kota" data-validation="required" disabled>
             <?php
                     $querykota = mysqli_query($con, "SELECT * FROM regencies WHERE province_id='$data[id_provinces]'");
                     while($kota = mysqli_fetch_array($querykota)){
@@ -58,9 +58,9 @@
     </div>
         <div class="form-group row">
             <label class="col-sm-3 col-form-label" for="berat">Berat</label>
-            <div class="col-sm-2"><input class="form-control" type="text" name="berat" id="berat" onkeyup="hitung2();" data-validation="required" value="<?= $data['berat']?>"></div>
+            <div class="col-sm-2"><input class="form-control" type="text" name="berat" id="berat" onkeyup="hitung2();" data-validation="required" value="<?= $data['berat']?>" disabled></div>
             <label class="col-sm-2 col-form-label" for="koli">Koli</label>
-            <div class="col-sm-2"><input class="form-control" type="text" name="koli" class="koli" id="koli" onkeyup="hitung2();" data-validation="required" value="<?= $data['koli']?>"></div>
+            <div class="col-sm-2"><input class="form-control" type="text" name="koli" class="koli" id="koli" onkeyup="hitung2();" data-validation="required" value="<?= $data['koli']?>" disabled></div>
         </div>
         <div class="form-group row">
             <label class="col-sm-3 col-form-label" for="ongkir">Ongkir/kg</label>
@@ -76,34 +76,33 @@
         <hr>
         <div class="form-group row">
             <label class="col-sm-3 col-form-label" for="nama_penerima">Nama</label>
-            <div class="col-sm-7"><input class="form-control" type="text" name="nama_penerima" id="nama_penerima" value="<?= $data['nama_penerima']?>" data-validation="required"></div>
+            <div class="col-sm-7"><input class="form-control" type="text" name="nama_penerima" id="nama_penerima" value="<?= $data['nama_penerima']?>" data-validation="required" readonly></div>
         </div>
         <div class="form-group row">
             <label class="col-sm-3 col-form-label" for="alamat_penerima">Alamat</label>
-            <div class="col-sm-7"><textarea class="form-control" name="alamat_penerima" id="alamat_penerima" rows="3" data-validation="required"><?= $data['alamat_penerima']?></textarea></div>
+            <div class="col-sm-7"><textarea class="form-control" name="alamat_penerima" id="alamat_penerima" rows="3" data-validation="required" readonly><?= $data['alamat_penerima']?></textarea></div>
         </div>
         <div class="form-group row">
             <label class="col-sm-3 col-form-label" for="telp_penerima">No. Telp</label>
-            <div class="col-sm-6"><input class="form-control" type="number" name="telp_penerima" id="telp_penerima" value="<?= $data['telp_penerima']?>" data-validation="required"></div>
+            <div class="col-sm-6"><input class="form-control" type="number" name="telp_penerima" id="telp_penerima" value="<?= $data['telp_penerima']?>" data-validation="required" readonly></div>
         </div>
         
         <h5 class="mt-2">Pengirim</h5>
         <hr>
         <div class="form-group row">
             <label class="col-sm-3 col-form-label" for="nama_pengirim">Nama</label>
-            <div class="col-sm-7"><input class="form-control" type="text" name="nama_pengirim" id="nama_pengirim" value="<?= $data['nama_pengirim']?>" data-validation="required"></div>
+            <div class="col-sm-7"><input class="form-control" type="text" name="nama_pengirim" id="nama_pengirim" value="<?= $data['nama_pengirim']?>" data-validation="required" readonly></div>
         </div>
         <div class="form-group row">
             <label class="col-sm-3 col-form-label" for="alamat_pengirim">Alamat</label>
-            <div class="col-sm-7"><textarea class="form-control" name="alamat_pengirim" id="alamat_pengirim" rows="3" data-validation="required"><?= $data['alamat_pengirim']?></textarea></div>
+            <div class="col-sm-7"><textarea class="form-control" name="alamat_pengirim" id="alamat_pengirim" rows="3" data-validation="required" readonly><?= $data['alamat_pengirim']?></textarea></div>
         </div>
         <div class="form-group row">
             <label class="col-sm-3 col-form-label" for="telp_pengirim">No. Telp</label>
-            <div class="col-sm-6"><input class="form-control" type="number" name="telp_pengirim" id="telp_pengirim" value="<?= $data['telp_pengirim']?>" data-validation="required"></div>
+            <div class="col-sm-6"><input class="form-control" type="number" name="telp_pengirim" id="telp_pengirim" value="<?= $data['telp_pengirim']?>" data-validation="required" readonly></div>
         </div>
         <div class="form-group row">
-            <a class="btn btn-lg btn-success text-white" id="tambah-kiriman">Simpan</a>&nbsp;&nbsp;&nbsp;
-            <input type="reset" value="Batal" class="btn btn-lg btn-danger">
+            <a class="btn btn-lg btn-secondary text-white" href="?hal=kiriman/kiriman">Kembali</a>
         </div>
         <div id="result"></div>
     </div>
