@@ -1,5 +1,5 @@
 <?php
-    include "../../library/config.php";
+    include "../library/config.php";
     session_start();
 
             $insert = date('d-m-Y H-i-s') . "| Input Di " . $_SESSION['kantor'];

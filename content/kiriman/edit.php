@@ -10,7 +10,7 @@
 </head>
 <h4 class="mt-2">Kiriman</h4>
 <hr>
-<form class="mb-5" method="post" id="kiriman-edit">
+<form class="mb-5" method="post" id="kiriman-tambah">
 <div class="form-group row">
     <label class="col-sm-2 col-form-label" for="resi" id="resi">No Resi</label>
     <div class="col-sm-3">
@@ -102,7 +102,7 @@
             <div class="col-sm-6"><input class="form-control" type="number" name="telp_pengirim" id="telp_pengirim" value="<?= $data['telp_pengirim']?>" data-validation="required"></div>
         </div>
         <div class="form-group row">
-            <a class="btn btn-lg btn-success text-white" id="edit-kiriman">Simpan</a>&nbsp;&nbsp;&nbsp;
+            <a class="btn btn-lg btn-success text-white" id="tambah-kiriman">Simpan</a>&nbsp;&nbsp;&nbsp;
             <input type="reset" value="Batal" class="btn btn-lg btn-danger">
         </div>
         <div id="result"></div>
